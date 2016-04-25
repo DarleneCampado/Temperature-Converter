@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<form id="form" onsubmit="return false;">
+   Please input numerical values to convert:
+   <br/>Fahrenheit: <input type="text" id="userFahr" />
+   <br/>Celsius: <input type="text" id="userCel" />
+    <input style="position:absolute; top:50%; left:5%; width:40%;" type="Submit" onclick="othername();" />
+</form>
+<script LANGUAGE="JAVASCRIPT">
+function othername() {
+    var far = document.getElementById("userFahr").value;
+    var cel = document.getElementById("userCel").value;
+    var ccel = (parseInt(far)-32)*.5555556;
+    var cfar = (parseInt(cel)*1.80)+32;
+    alert(far + " Farenheit to Celsius: " + ccel);
+    alert(cel + " Celsius to Farenheit: " + cfar);
+}
+</script>
+</form>
